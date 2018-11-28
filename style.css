@@ -1,88 +1,182 @@
-body
-{
-    background-color:  #1a1a1a;
+/* Base Styles -------------------- */
+body {
+    margin: 0px;
+    width: auto;
 }
 
-#nameBox
-{
-    height: 14%;
-    width: 55%;
-    background-color: #FDF3E7;
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    border-radius: 25px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Will save if necessary. Currently don't think it's necessary.
-#boxBorder
-{
-    border-style: solid;
-    border-width: 3px;
-    border-color: #4682B4;
-    border-radius: 25px;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Styles -------------------- */
+
+.main-header {
+    height: 600px;
     width: 98%;
-    position: relative;
-    top: 5px;
-    bottom: 5px;
-} */
-
-#name
-{
-    font-size: 60px;
-    font-family: Muli;
-    color: #3B3738;
-    position:static;
-}
-
-#blurb
-{
-    font-size: 15px;
-    font-family: Montserrat;
-    color: #3B3738;
-    position: static;
-    bottom: 40px;
-}
-
-img
-{
-    border-radius: 50%;
-}
-
-#imageCircle
-{
-    position: absolute;
-    left: 68%;
-    top: 9%;
-}
-
-#emailCircle
-{
-    position: absolute;
-    left: 81.5%;
-    top: 5%;
-}
-
-#linkedInCircle
-{
-    position: absolute;
-    left: 83%;
-    top: 15%;
-}
-
-#githubCircle
-{
-    position: absolute;
-    left: 81.5%;
-    top: 28%;
-}
-
-a:hover
-{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("image5.jpg");
+    /* image by Samuel Scrimshaw on Unsplashed */
     opacity: 0.8;
+    background-color: #cccccc; /* Used if image unavailable */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding-right: 1%;
+    padding-left: 1%;
 }
 
-.entryBox
-{
-    color: white;
+#contact-header {
+    height: 75px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
+
+    /* Nav bar ------------------------ */
+    .nav-bar {
+        width: auto;
+        height: 5%;
+    }
+
+    .nav-list li {
+        float: right;
+    }
+
+    .nav-list li a {
+        font-family: 'Yantramanav', sans-serif;
+        display: block;
+        text-align: center;
+        margin: 10px;
+        padding: 10px 12px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-list li a:hover {
+        opacity: 0.6;
+    }
+
+    .active {
+        opacity: 0.6;
+    }
+
+    #label {
+        font-family: 'Yantramanav', sans-serif;
+        float: left;
+        padding: 10px 12px;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 25px;
+        margin: 15px;
+    }
+
+    #label a {
+        color: white;
+    }
+
+    #contact {
+        border: 1px solid white;
+    }
+
+    #contact:hover {
+        background-color: white;
+        color: black;
+    }
+    /* --------------------------------- */
+
+.intro-box {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 956px;
+    position: relative;
+    margin: auto;
+    padding: 32px;
+    color: white;
+    text-align: left;
+    top: 30%;
+}
+
+.main-body {
+    width: 90%;
+    margin: 5%;
+    overflow: auto;
+}
+
+.picture-half {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+    #pic {
+        width: 70%;
+        height: 50%;
+    }
+
+.profile-half {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 50%;
+    float: right;
+}
+
+    #intro-sentence {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+.main-footer {
+    padding: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    float: clear;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.contact-info {
+    height: 300px;
+    width: 60%;
+    margin: 2% 20%;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 20px;
+    padding-top: 7%;
+}
+
+.contact-info div {
+    width: 85%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.contact-info p {
+    padding: 2%;
+}
+
+.icon {
+    width: 15%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    color: #686868;
+    font-size: 16px;
+    float: left;
+}
+
+.info {
+    width: 70%;
+    padding-left: 10%;
+    float: left;
+}
+/* Media Queries -------------------- */
