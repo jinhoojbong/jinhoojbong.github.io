@@ -34,7 +34,7 @@ a {
 
 #contact-header {
     height: 75px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 }
 
     /* Nav bar ------------------------ */
@@ -137,7 +137,7 @@ a {
 .main-footer {
     padding: 50px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
     float: clear;
